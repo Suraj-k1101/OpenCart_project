@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Opencart.utilities.ListenerSetup"/>
+    <listener class-name="com.Opencart.utilities.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Opencart.testLayer.RegisterTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="ValidateRegisteringAccountByProvidingOnlyMandatoryFields"/>
+        </methods>
+      </class> <!-- com.Opencart.testLayer.RegisterTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
